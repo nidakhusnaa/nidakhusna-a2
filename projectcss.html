@@ -1,28 +1,86 @@
 <html>
     <head>
         <style>
-            *{height: 150%;}
+            *{height: 100%; 
+                margin: 0px;
+                padding: 10px; 
+                box-sizing: border-box;}
 
-            body{background-color: burlywood; display: flex; flex-direction: column;}
-            header{background-color: brown; font-size: xx-large; font-style: bold; 
-                font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 10px; text-align: center; margin:10px; display: flex;}
-            aside{background-color: darkgoldenrod; font-style: italic; font-size: xx-large; display: flex; padding: 10px; margin: 10px;}
-            section{background-color: darksalmon; padding: 10px; margin: 10px; display: flex; flex: 3; width: 100px;}
-            main{background-color: crimson; font-size: x-large; display: flex; flex: 2; height: 150px;}
-            footer{background-color: coral; padding: 10px; display: flex;}
-            article{width: 150px; display: flex;flex: 3; height: 150px;}
+            body{background-color: burlywood; 
+                display: flex; 
+                flex-direction: column;}
+
+            header{background-color: brown; 
+                font-size: xx-large;  
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                display: flex;
+                flex: 2;
+                justify-content: space-between;}
+
+            aside{background-color: darkgoldenrod; 
+                font-style: italic; 
+                font-size: xx-large;
+                width: 20%;}
+
+            section{background-color: darksalmon; 
+                display: flex;
+                flex: 3;
+                width: 100px;
+                column-gap: 10px;}
+
+            main{background-color: crimson;
+                font-size: x-large; 
+                display: flex; 
+                flex: 4;}
+
+            footer{background-color: coral;
+                display: flex;
+                flex: 1;}
+
+            article{width: 100%;
+                background-color: chocolate;}
+
+            ul{display: flex;
+            list-style: none;}
+
+            li{margin-right: 10px;}
+
+            img{height: 8cm;
+            width: 10cm;}
 
         </style>
-
     </head>
+
     <body>
-        <header>HEADER</header>
+        <header>HEADER
+            <br>
+            <source><img src="Picture.PNG">
+            <nav>
+                <ul>
+                    <li><a href="profile.html"> home</a></li>
+                    <li><a href="profile.html"> about</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
-            <aside>sidebar</aside>
+            <aside>sidebar
+                <br>
+                <a href="profile.html">hei</a>
+                <br>
+                <a href="profile.html">you</a>
+            </aside>
+
             <section>
-                <article>profile</article>
-                <article>information</article>
-                <article>education</article>
+                <article>profile
+                    <p>perkenalkan saya adalah seorang mahasiswa</p>
+                </article>
+                <article>information
+                    <p>there is no information about me</p>
+                </article>
+                <article>education
+                    <p>teknologi pendidikan</p>
+                </article>
             </section>
         </main>
         <footer>Footer</footer>
